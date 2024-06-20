@@ -7,7 +7,7 @@ import {
   Animated,
   TouchableOpacity
 } from "react-native";
-+import {TextPropTypes} from 'deprecated-react-native-prop-types';
+import {TextPropTypes} from 'deprecated-react-native-prop-types';
 import ActionButtonItem from "./ActionButtonItem";
 import {
   shadowStyle,
