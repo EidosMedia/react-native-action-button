@@ -18,7 +18,8 @@ import {
   DEFAULT_ACTIVE_OPACITY
 } from "./shared";
 
-const ActionButton = props => {
+const ActionButton = incomingProps => {
+  const props = { ...ActionButton.defaultProps, ...incomingProps };
   const [, setResetToken] = useState(props.resetToken);
   const [active, setActive] = useState(props.active);
   const anim = useRef(new Animated.Value(props.active ? 1 : 0));
